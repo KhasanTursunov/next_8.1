@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import uzumImg from "@/assets/svg/withtext.svg";
-import { FaRegUser } from "react-icons/fa";
-
 const Header = () => {
   return (
     <div className="container max-w-7xl mx-auto p-6 flex justify-between items-center">
