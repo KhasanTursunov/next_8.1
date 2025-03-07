@@ -4,7 +4,7 @@ import React from "react";
 import uzumImg from "@/assets/svg/withtext.svg";
 const Header = () => {
   return (
-    <div className="container max-w-7xl mx-auto p-6 flex justify-between items-center">
+    <div className="container max-w-7xl mx-auto p-6 flex justify-between items-center top-0 left-0 sticky bg-white">
       <div>
         <Link href={"/"}>
           <Image className="cursor-pointer" src={uzumImg} alt="uzum img" />
@@ -38,7 +38,6 @@ const Header = () => {
           Products
         </Link>
 
-        {/* home user reciepe */}
       </div>
     </div>
   );
