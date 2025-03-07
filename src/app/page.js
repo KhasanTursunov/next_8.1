@@ -1,9 +1,15 @@
-import Image from "next/image";
+import Recipes from "@/components/Recipes";
+import React from "react";
 
-export default function Home() {
+const Home = async () => {
+  const data = await fetch("https://dummyjson.com/recipes");
+  const RecipesPayload = await data.json();
+  console.log(RecipesPayload);
   return (
-   <div>
-    <h2>Home</h2>
-   </div>
+    <div>
+      <Recipes RecipesPayload={RecipesPayload} />
+    </div>
   );
-}
+};
+
+export default Home;
