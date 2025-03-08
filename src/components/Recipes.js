@@ -15,7 +15,7 @@ const Recipes = ({ RecipesPayload }) => {
               className="bg-[#EFEFEF] rounded-xl mb-2 cursor-pointer"
               onClick={() => router.push(`/recipe/${recipe.id}`)}
               src={recipe.image}
-              alt={recipe.firstName}
+              alt={recipe.name}
               width={500}
               height={500}
             />
