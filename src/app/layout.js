@@ -2,8 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 // import { Geist, Geist_Mono, Inter, Roboto } from "next/font/google";
 // i have to pu roboto and Inter here like that
 import "./globals.css";
-import Header from "@/components/Header";
-import Showcase from "@/components/Showcase";
+// import Header from "@/components/Header";
+// import Showcase from "@/components/Showcase";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +27,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Header/>
-        <Showcase/>
+        {/* <Header/>
+        <Showcase/> */}
         {children}
       </body>
     </html>

@@ -41,8 +41,11 @@ const Header = () => {
           <Link className="text-[#7F4DFF]" href={"/products"}>
             Products
           </Link>
-          <Link className="text-[#7F4DFF]" href={"/auth"}>
+          {/* <Link className="text-[#7F4DFF]" href={"/auth"}>
             Login
+          </Link> */}
+          <Link className="text-[#7F4DFF]" href={"/dashboard"}>
+            Dashboard
           </Link>
         </div>
       </div>
