@@ -4,11 +4,11 @@ import React from "react";
 import { useRouter } from "next/navigation";
 import { FaRegStar } from "react-icons/fa";
 
-const Users = ({ userPayload }) => {
+const Users = ({ payload }) => {
   const router = useRouter();
   return (
     <div className="container max-w-7xl mx-auto p-6 flex flex-wrap gap-8 justify-center">
-      {userPayload?.users?.map((user) => (
+      {payload?.users?.map((user) => (
         <div className="w-[260px]  p-2" key={user.id}>
           <div>
             <Image

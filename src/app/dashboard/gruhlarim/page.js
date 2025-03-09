@@ -1,9 +1,16 @@
-import React from 'react'
+import Todos from "@/components/Gruhlarim";
+import React from "react";
 
-const Gruhlarim = () => {
+const Gruhlarim = async () => {
+  const data = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const payload = await data.json();
+  console.log(payload);
+
   return (
-    <div>Gruhlarim</div>
-  )
-}
+    <div>
+      <Todos payload={payload} />
+    </div>
+  );
+};
 
-export default Gruhlarim
+export default Gruhlarim;

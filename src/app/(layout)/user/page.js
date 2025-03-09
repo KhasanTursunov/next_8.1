@@ -3,11 +3,11 @@ import React from 'react'
 
 const User = async () => {
   const data = await fetch("https://dummyjson.com/users");
-  const userPayload = await data.json();
-  console.log(userPayload);
+  const payload = await data.json();
+  console.log(payload);
   return (
     <div>
-      <Users userPayload={userPayload} />
+      <Users payload={payload} />
     </div>
   );
 };
